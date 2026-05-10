@@ -36,15 +36,30 @@
             border-radius: 10px;
             font-weight: bold;
         }
+        .clickable-app-image {
+            /* Reduce size here */
+            width: 200px;
+            height: auto;
+
+            border-radius: 15px;
+            margin-top: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            transition: transform 0.2s ease;
+        }
+
+        .clickable-app-image:hover {
+            transform: scale(1.05); /* Visual feedback that it's a link */
+        }
+
+        /* Remove the old .button styles if you want to clean up the code */
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>S U D O K U</h1>
-        <p>Train your brain with a clean and minimal Sudoku experience.</p>
-        
-        <a class="button" href="https://apps.apple.com/us/app/just-sudoku-classic-puzzle/id6762172260">
-            Download on App Store
+        <a href="https://apps.apple.com/us/app/just-sudoku-classic-puzzle/id6762172260">
+            <img src="assets/sudoku_v.png" alt="Download Sudoku on the App Store" class="clickable-app-image">
         </a>
     </div>
 </body>
