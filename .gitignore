@@ -1,0 +1,9 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+
+.DS_Store
+.gradle/
+
+target/
